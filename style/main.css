@@ -1,6 +1,9 @@
 body {
   height: 100vh;
 }
+.mobile-only {
+  display: none;
+}
 
 .main {
   /* height: 100%; */
@@ -213,4 +216,88 @@ h2 {
 }
 .red-text {
   color: #ff5e00 !important;
+}
+
+/* Mdeia Quries */
+
+@media only screen and (max-width: 600px) {
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+
+  .header {
+    background-color: transparent;
+    box-shadow: none !important;
+  }
+  .header .branding {
+    background-color: #9c8d7c;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .mobile-language .img-outer {
+    background-color: #000;
+  }
+
+  .mobile-language .img-inner {
+    background-color: #9c8d7c;
+    padding: 5px 20px;
+  }
+  .mobile-top-header {
+    display: flex;
+    justify-content: space-around;
+  }
+  .mobile-time {
+    background-color: white;
+    margin: 10px 0;
+    border: 1px solid #9c8d7c;
+    border-radius: 6px;
+    padding: 20px;
+  }
+
+  .options > * {
+    margin: 10px 0;
+  }
+  .right-row {
+    border: none;
+  }
+  .right-row img {
+    width: 170px;
+  }
+  .main-box .inner {
+    border: none;
+    box-shadow: none !important;
+  }
+  .main-box .outer .inner {
+    border: 1px solid #9c8d7c;
+  }
+  .right-row {
+    padding: 0;
+  }
+  .button-row {
+    box-shadow: none !important;
+    margin: 10px 0 !important;
+  }
+
+  footer .links {
+    text-align: center;
+    background-color: #fefefe;
+    margin: 10px 0px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  footer .links a {
+    text-align: center;
+    padding: 0px 50px;
+    text-align: center;
+  }
+  footer .links a {
+    text-align: center;
+    padding: 0px 50px;
+    text-align: center;
+  }
 }

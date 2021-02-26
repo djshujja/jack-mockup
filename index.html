@@ -25,10 +25,11 @@
     <title>Мой профиль</title>
   </head>
   <body>
-    <div class="main">
-      <div class="container">
+    <div class="main no-gutters">
+      <div class="container no-gutters">
         <!-- Header -->
-        <div class="row header shadow">
+        
+        <div class="desktop-only row header shadow no-gutters text-center">
           <div class="col-lg-2">
             <div class="col-12">
               <img src="./images/logo-header-transparent.png" class="logo" />
@@ -72,12 +73,90 @@
             </div>
           </div>
         </div>
+
+        <div class="mobile-only row header shadow no-gutters text-center">
+          <div class="col-lg-2">
+            <div class="col-12 desktop-only">
+              <img src="./images/logo-header-transparent.png" class="logo" class="" />
+            </div>
+            <div class="col-12 mobile-top-header mobile-only d-flex ">
+              <div class="row my-auto">
+                  <div class="col-6">
+                    <img src="./images/logo-header-transparent.png" class="logo shadow d-block w-100"  />
+                  </div>
+                  <div class="col-3">
+                    <div class="mobile-language my-auto">
+                      <div class="img-outer shadow-lg">
+                        <div class="img-inner">
+                          <img src="./images/RU.png" alt="" />
+                          <p>RU</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="mobile-language my-auto">
+                      <div class="img-outer shadow-lg">
+                        <div class="img-inner">
+                          <img src="./images/RU.png" alt="" />
+                          <p>RU</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>              
+            </div>
+            </div>
+          </div>
+          <div class="col-lg-8 m-auto">
+            <div class="col-12 branding">
+              <h1>Мой профиль</h1>
+            </div>
+            <div class="mobile-only">
+              <div class="mobile-time">
+                <div class="col-12 time brown-text"><span class="bolder green-text" style="font-size:0.8rem;">СЕГОДНЯ:</span> Фев 04, 2020  12:35:45 (GMT)</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 m-auto">
+            <div class="languages desktop-only">
+              <div class="col-12 d-flex">
+                <img
+                  src="./images/UA.png"
+                  alt="UA-flag"
+                  class="d-block"
+                  height="100%"
+                />
+                <p>UA</p>
+              </div>
+
+              <div class="col-12 d-flex middle">
+                <img
+                  src="./images/RU.png"
+                  alt="RU-flag"
+                  class="d-block"
+                  height="100%"
+                />
+                <p>RU</p>
+              </div>
+              <div class="col-12 d-flex">
+                <img
+                  src="./images/EN.png"
+                  alt="EN-flag"
+                  class="d-block"
+                  height="100%"
+                />
+                <p>EN</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <div class="breadcrums">
           <div class="row my-5">
             <div class="col-6 brown-text">
               <span class="bolder"> < </span>НАЗАД
             </div>
-            <div class="col-6 time brown-text"><span class="bolder" style="font-size:1rem;">СЕГОДНЯ:</span> Фев 04, 2020  12:35:45 (GMT)</div>
+            <div class="col-6 time brown-text desktop-only"><span class="bolder" style="font-size:1rem;">СЕГОДНЯ:</span> Фев 04, 2020  12:35:45 (GMT)</div>
           </div>
         </div>
         <!-- Options -->
@@ -149,7 +228,7 @@
           <div class="lines">
             <div class="inner row m-5 shadow-lg">
               <!-- <div class=""> -->
-              <div class="col-4 left-row my-auto">
+              <div class="col-md-4 left-row my-auto">
                 <div class="col-12 shadow-lg">
                   <div class="img-outer shadow-lg">
                     <div class="img-inner">
@@ -160,35 +239,35 @@
                 <h3 class="my-2 text-center brown-text">Мой ник</h3>
               </div>
 
-              <div class="col-8 right-row">
-                <div class="col-12">
+              <div class="col-md-8 right-row">
+                <div class="col-md-12">
                   <div class="row">
-                    <div class="col-10">
+                    <div class="col-md-10">
                       <div class="col-12">
                         <div class="row">
-                          <div class="col-11 outer">
+                          <div class="col-md-11 outer">
                             <h3 class="text-center red-text">не найдено</h3>
                             <div class="inner shadow">
                               <h4 class="text-center">fhgkjhkhl;l345</h4>
                             </div>
                           </div>
-                          <div class="col-1 my-auto shadow-lg">
+                          <div class="col-md-1 m-auto button-row shadow-lg text-center">
                             <button class="btn btn-success shadow-lg">
                               Сохранить
                             </button>
                           </div>
                         </div>
                       </div>
-                      <div class="col-12">
+                      <div class="col-md-12 no-gutters">
                         <img
                           src="./images/robot.png"
                           alt=""
                           class="d-block my-5 mx-auto"
-                          width="350px"
+                          width="170px"
                         />
                       </div>
                     </div>
-                    <div class="col-2 my-auto"></div>
+                    <div class="col-md-2 my-auto"></div>
                   </div>
                 </div>
                 <div class="col-12"></div>
@@ -199,7 +278,7 @@
         </div>
       </div>
     </div>
-    <footer>
+    <footer class="desktop-only">
       <div class="container py-4">
         <div class="row">
           <div class="col-3 branding">
@@ -215,6 +294,42 @@
             <a href="#" class="brown-text">МОЙ ПРО\ФИЛЬ </a>
             <a href="#" class="red-text">ПОДДЕРЖКА</a>
           </div>
+          <div class="col-3">
+            <a href="#">
+              <img
+                src="./images/arrow-top.png"
+                alt=""
+                class="d-block m-auto top-arrow shadow"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="mobile-only">
+      <div class="container py-4">
+        <div class="row mx-auto">
+          <div class="col-12 ">
+            <div class="col-2 links">
+            <a href="#" class="green-darker-text">ГЛАВНАЯ</a>
+            </div>
+          </div>
+          <div class="col-12 links">
+              <a href="#" class="green-text">ИГРЫ</a>
+              <a href="#" class="orange-text">ПРИЗЫ</a>
+          </div>
+          <div class="col-12 links d-flex">
+            <a href="#" class="brown-text">МОЙ ПРО\ФИЛЬ</a>
+            <a href="#" class="red-text">ПОДДЕРЖКА</a>
+          </div>
+          
+          <div class="col-3 branding">
+            <div class="col-12">
+              <img src="./images/logo-footer-transparent.png" alt="" />
+            </div>
+            <small class="text-white">2021 / Все права защищены</small>
+          </div>
+          
           <div class="col-3">
             <a href="#">
               <img
