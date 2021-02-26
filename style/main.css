@@ -3,8 +3,9 @@ body {
 }
 
 .main {
-  /* height: 85vh; */
+  /* height: 100%; */
   background: url("../images/bg.png");
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -30,12 +31,37 @@ body {
   font-size: 3rem;
 }
 
-.languages > * {
+.languages {
+  margin: 10px 0;
   background-color: #fefefe;
-  margin: 5px 0;
-  margin: auto;
+  justify-content: space-around;
+  width: 100px;
+  border-radius: 10px;
 }
 
+.languages > * {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.languages .middle {
+  background-color: #9c8d7c;
+  border-radius: 6px;
+}
+.languages p {
+  margin: auto;
+}
+.languages img {
+  display: block;
+  margin: auto;
+}
+.time {
+  text-align: right;
+}
+.bolder {
+  font-weight: 900;
+  font-size: 1.4rem;
+}
 /* Options */
 
 .option {
@@ -63,7 +89,7 @@ body {
 /* Main-Box */
 
 .main-box {
-  padding: 20px;
+  padding: 20px 0px;
   background: #fefefe;
   margin: 20px 0;
   border-radius: 5px;
@@ -72,6 +98,12 @@ body {
 .main-box .inner {
   border-radius: 15px;
   border: 1px solid #743f02;
+}
+
+.lines {
+  border-bottom: 4px double #333;
+  border-top: 4px double #999;
+  padding: 10px 0px;
 }
 
 /* Left Row */
@@ -118,7 +150,29 @@ body {
 /* Footer */
 footer {
   background: #9c8d7c;
+}
+.branding img {
+  background-color: #fefefe;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+.links-row {
+  background: #fefefe;
   height: 50px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+.links-row a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+.top-arrow {
+  background-color: #00c240;
+  padding: 15px 10px;
+  border-radius: 5px;
 }
 
 /* Globals */
@@ -130,19 +184,27 @@ h2 {
 }
 
 .brown-text {
-  color: #743f02;
+  color: #743f02 !important;
 }
 .green {
   background-color: #00c240;
 }
-
+.green-text {
+  color: #00c240 !important;
+}
+.green-darker-text {
+  color: #539650 !important;
+}
 .orange {
   background-color: #ff9100;
+}
+.orange-text {
+  color: #ff9100 !important;
 }
 
 .red {
   background-color: #ff5e00;
 }
 .red-text {
-  color: #ff5e00;
+  color: #ff5e00 !important;
 }
