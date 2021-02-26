@@ -86,6 +86,12 @@ body {
   border-radius: 5px;
 }
 
+.inner-text {
+  text-align: center;
+}
+.breadcrums {
+  margin-top: -40px;
+}
 /* Main-Box */
 
 .main-box {
@@ -167,7 +173,7 @@ footer {
 .links-row a {
   text-decoration: none;
   color: black;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 .top-arrow {
   background-color: #00c240;
