@@ -1,5 +1,4 @@
 body {
-  height: 100vh;
 }
 .mobile-only {
   display: none;
@@ -7,6 +6,8 @@ body {
 
 .main {
   /* height: 100%; */
+  height: 85vh;
+
   background: url("../images/bg.png");
 
   background-repeat: no-repeat;
@@ -227,6 +228,9 @@ h2 {
   .desktop-only {
     display: none;
   }
+  .hamburger {
+    height: 60px;
+  }
 
   .header {
     background-color: transparent;
@@ -244,6 +248,11 @@ h2 {
     box-shadow: -5px 4px 15px 5px #9c8d7c;
   }
 
+  .mobile-language {
+    -webkit-box-shadow: -5px 4px 15px 5px #9c8d7c !important;
+    box-shadow: -5px 4px 15px 5px #9c8d7c !important;
+    border-radius: 15px;
+  }
   .mobile-language .img-outer {
     color: #fff;
     text-align: start;
@@ -254,7 +263,8 @@ h2 {
 
   .mobile-language .img-inner {
     background-color: #9c8d7c;
-    padding: 5px 15px;
+    text-align: center;
+    padding: 5px 0px;
   }
   .mobile-top-header {
     display: flex;
@@ -270,6 +280,9 @@ h2 {
     box-shadow: -5px 4px 15px 5px #9c8d7c;
   }
 
+  .options {
+    margin-top: -30px;
+  }
   .options > * {
     margin: 5px 0;
   }
