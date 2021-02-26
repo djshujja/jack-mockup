@@ -232,19 +232,29 @@ h2 {
     background-color: transparent;
     box-shadow: none !important;
   }
+  .header .logo {
+    -webkit-box-shadow: -5px 4px 15px 5px #9c8d7c !important;
+    box-shadow: -5px 4px 15px 5px #9c8d7c !important;
+  }
   .header .branding {
     background-color: #9c8d7c;
     padding: 20px;
     border-radius: 15px;
+    -webkit-box-shadow: -5px 4px 15px 5px #9c8d7c;
+    box-shadow: -5px 4px 15px 5px #9c8d7c;
   }
 
   .mobile-language .img-outer {
-    background-color: #000;
+    color: #fff;
+    text-align: start;
+    background-color: #fff;
+    -webkit-box-shadow: -5px 4px 15px 5px #9c8d7c;
+    box-shadow: -5px 4px 15px 5px #9c8d7c;
   }
 
   .mobile-language .img-inner {
     background-color: #9c8d7c;
-    padding: 5px 20px;
+    padding: 5px 15px;
   }
   .mobile-top-header {
     display: flex;
@@ -252,14 +262,16 @@ h2 {
   }
   .mobile-time {
     background-color: white;
-    margin: 10px 0;
+    margin: 20px 0;
     border: 1px solid #9c8d7c;
     border-radius: 6px;
     padding: 20px;
+    -webkit-box-shadow: -5px 4px 15px 5px #9c8d7c;
+    box-shadow: -5px 4px 15px 5px #9c8d7c;
   }
 
   .options > * {
-    margin: 10px 0;
+    margin: 5px 0;
   }
   .right-row {
     border: none;
@@ -282,6 +294,11 @@ h2 {
     margin: 10px 0 !important;
   }
 
+  footer .links a {
+    text-align: center;
+    padding: 0px 50px;
+    text-align: center;
+  }
   footer .links {
     text-align: center;
     background-color: #fefefe;
@@ -290,14 +307,17 @@ h2 {
     padding: 10px;
     border-radius: 5px;
   }
-  footer .links a {
+  footer .last-links {
     text-align: center;
-    padding: 0px 50px;
-    text-align: center;
+    background-color: #fefefe;
+    margin: 10px 0px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
   }
-  footer .links a {
+  footer .last-links a {
     text-align: center;
-    padding: 0px 50px;
+    padding: 0px 23px;
     text-align: center;
   }
 }
