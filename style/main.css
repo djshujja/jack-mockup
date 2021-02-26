@@ -1,12 +1,13 @@
 body {
+  /* height: 100vh; */
 }
 .mobile-only {
   display: none;
 }
 
 .main {
-  /* height: 100%; */
-  height: 85vh;
+  height: 100%;
+  /* height: vh; */
 
   background: url("../images/bg.png");
 
